@@ -17,5 +17,9 @@ namespace Eshop.Controllers
         {
             return PartialView();
         }
+        public ActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }
