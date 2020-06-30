@@ -1,7 +1,10 @@
-﻿
+﻿@model DataLayer.Users
 @{
-    ViewBag.Title = "SuccessRegister";
+    ViewBag.Title = "ثبت نام";
 }
 
-<h2>SuccessRegister</h2>
+<div class="alert alert-success">
+    <h2>@Model.UserName عزیز ، با تشکر از ثبت در سایت </h2>
+    <p> ایمیلی حاوی لینک فعالسازی به ایمیل "@Model.Email" ارسال شد لطفا وارد ایمیل فوق شود و روی لینک کلیک کنید </p>
+</div>  
 

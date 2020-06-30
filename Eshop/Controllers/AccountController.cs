@@ -38,6 +38,7 @@ namespace Eshop.Controllers
 
                     db.Users.Add(user);
                     db.SaveChanges();
+                    return View("SuccessRegister", user);
                 }
             }
             else

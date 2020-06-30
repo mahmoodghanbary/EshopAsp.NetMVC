@@ -9,7 +9,7 @@ namespace DataLayer.ViewModels
 {
     public class RegisterViewModel
     {
-        [Display(Name ="نام کاربری")]
+        [Display(Name ="نام و نام خانوادگی")]
         [Required(ErrorMessage ="لطفا {0} را وارد کنید")]
         public string UserName { get; set; }
         [Display(Name = "ایمیل")]
@@ -22,6 +22,7 @@ namespace DataLayer.ViewModels
         public string Password { get; set; }
         [Display(Name = "تکرار کلمه عبور")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
+        [DataType(DataType.Password)]
         [Compare("Password",ErrorMessage ="کلمه های عبور مغایرت دارند")]
         public string RePassword { get; set; }
 
