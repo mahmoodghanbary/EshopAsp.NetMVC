@@ -73,6 +73,7 @@
     <Compile Include="Users.cs">
       <DependentUpon>EshopModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="UsersMetaData.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="EshopModel.edmx">
