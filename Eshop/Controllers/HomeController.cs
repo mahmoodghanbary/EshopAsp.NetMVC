@@ -13,5 +13,9 @@ namespace Eshop.Controllers
         {
             return View();
         }
+        public ActionResult Slider()
+        {
+            return PartialView();
+        }
     }
 }
